@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #111 !important;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ffffff30;
+            padding-bottom: 5px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            color: #fff;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .skills i {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarLinks">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5 text-center">
+        <h2 class="section-title">About Me</h2>
+        <img src="./IMG-20220628-WA0004.jpg" alt="Profile" class="profile-img mb-3" />
+        <p class="fs-5">
+            Hi! I'm a Fresher in Web Development who loves building websites using technologies like HTML, CSS,
+            JavaScript, React.js, and Bootstrap.
+        </p>
+
+        <!-- Social Links -->
+        <div class="mt-3">
+            <a href="https://www.linkedin.com/in/hemant-dabhade-768b08285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="me-3 text-light fs-4">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ItsKai14" target="_blank" class="text-light fs-4">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5">
+        <h2 class="section-title text-center">Skills</h2>
+        <div class="row text-center mt-4 skills">
+            <div class="col">
+                <i class="fab fa-html5 text-danger"></i>
+                <p>HTML</p>
+            </div>
+            <div class="col">
+                <i class="fab fa-css3-alt text-primary"></i>
+                <p>CSS</p>
+            </div>
+            <div class="col">
+                <i class="fab fa-js text-warning"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="col">
+                <i class="fab fa-node text-success"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="col">
+                <i class="fab fa-react text-info"></i>
+                <p>React</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2 class="section-title text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h5 class="card-title">Personal Portfolio</h5>
+                    <p class="card-text">A Personal Porfolio website using HTML, CSS, and Bootstrap to showcase my
+                        work.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h5 class="card-title">Static Website (College Project)</h5>
+                    <p class="card-text">A basic frontend website using HTML, CSS, and JS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <small>© 2025 My Portfolio | Made with 💻</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
